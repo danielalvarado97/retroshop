@@ -1,0 +1,108 @@
+/* tipo de letras tamaño estructura de la web parte del medio */ 
+.hero {
+  margin: 4rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 900px;
+  width: 90%;
+}
+
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: #ff00ff;
+  text-shadow: 2px 2px 4px #000, -1px -1px 3px #0ff;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  animation: neonPulse 2s infinite;
+}
+
+.hero p,
+.hero .promo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.hero .promo {
+  font-size: 1.2rem;
+  color: #ff4444;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.highlight {
+  background-color: yellow;
+  color: red;
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* productos de la web, tipo de letras etc*/
+.products {
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.products h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.4rem;
+  color: #00ffff;
+  text-shadow: 2px 2px 6px #000, 0 0 8px #0ff, 0 0 12px #0ff;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  animation: glowPulse 2.5s infinite;
+}
+
+
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #00ffff;
+  text-shadow: 1px 1px 3px #000, 0 0 6px #0ff;
+  margin-top: 1rem;
+}
+
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3366cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+

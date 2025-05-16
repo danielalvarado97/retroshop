@@ -1,0 +1,153 @@
+/* common.css - Es el Estilo para la web principal RetroShop */
+
+body {
+  margin: 0;
+  background-image: url("../img/retro-pc-ljibqe88ia9kr7jt.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Estilo para el header principal con fondo oscuro y distribución en línea */
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 250px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #3366cc;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+ /* imagen logo */
+.logo img {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* tipografia, estilo tamaño de el menu*/
+.nav-links a {
+  text-decoration: none;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px #000;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px #0ff;
+}
+
+
+/* iconos inferiores de redes sociales*/
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer #redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer #redes img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(1.2);
+  transition: transform 0.2s ease;
+}
+
+footer #redes img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+
+/* menu hamburguesa adaptable */
+/* Oculta checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Estilo del icono hamburguesa */
+/* Icono hamburguesa oculto por defecto */
+.menu-icon {
+  display: none;
+}
+
+.menu-icon img {
+  filter: brightness(0) invert(1);  /* cambiar el color a la img hamburguer*/
+  width: 32px;
+  height: 32px;
+}
+
+/* Menú horizontal por defecto */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Responsive: en pantallas pequeñas */
+@media (max-width: 768px) {
+  /* Ocultar el menú */
+  .nav-links {
+    display: none;
+  }
+
+  /* Mostrar solo el icono hamburguesa */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+  }
+}
